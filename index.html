@@ -132,6 +132,11 @@
       width: 100%;
       border-radius: 6px;
       display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .work-item:hover img {
+      transform: scale(1.02);
     }
 
     .work-title {
@@ -221,9 +226,12 @@
 
   <div class="works-grid">
 
+    <!-- INTERIOR (LINKED PAGE) -->
     <div class="work-item">
-      <img src="images/art-1.jpg" alt="Interior Concept">
-      <div class="work-title">Interior Concept</div>
+      <a href="interior.html">
+        <img src="images/art-1.jpg" alt="Interior Concept">
+        <div class="work-title">Interior Concept</div>
+      </a>
       <div class="work-desc">
         A serene interior study prioritizing natural light, material softness,
         and spatial calm to support everyday living.
@@ -274,7 +282,6 @@
 <section id="services">
   <h3>Services</h3>
   <p>
-и
     Interior Architecture & Design<br>
     Architectural & Exterior Design<br>
     Space Planning<br>
