@@ -124,8 +124,8 @@
     .works-grid {
       margin-top: 80px;
       display: grid;
-      grid-template-columns: minmax(300px, 420px);
-      justify-content: center;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 64px;
     }
 
     .work-item img {
@@ -136,7 +136,7 @@
     }
 
     .work-item:hover img {
-      transform: scale(1.03);
+      transform: scale(1.02);
     }
 
     .work-title {
@@ -220,20 +220,48 @@
 <section id="works">
   <h3>Selected Works</h3>
   <p>
-    A focused presentation of ongoing and developed architectural concepts,
-    beginning with interior spatial studies.
+    A curated collection of architectural and interior concepts exploring
+    proportion, spatial clarity, and restrained material expression.
   </p>
 
   <div class="works-grid">
 
+    <!-- INTERIOR (LINKED PAGE) -->
     <div class="work-item">
       <a href="interior.html">
         <img src="images/art-1.jpg" alt="Interior Concept">
         <div class="work-title">Interior Concept</div>
       </a>
       <div class="work-desc">
-        A serene interior study prioritizing natural light, refined material
-        selection, and spatial calm — expressing contemporary Korean restraint.
+        A serene interior study prioritizing natural light, material softness,
+        and spatial calm to support everyday living.
+      </div>
+    </div>
+
+    <div class="work-item">
+      <img src="images/art-2.png" alt="Exterior Design">
+      <div class="work-title">Exterior Design</div>
+      <div class="work-desc">
+        An exterior composition defined by architectural clarity and subtle
+        dialogue between form and context.
+      </div>
+    </div>
+
+    <div class="work-item">
+      <img src="images/art-3.png" alt="Residential Concept">
+      <div class="work-title">Residential Concept</div>
+      <div class="work-desc">
+        A residential proposal shaped by proportion, circulation, and human
+        scale, expressing timeless domestic architecture.
+      </div>
+    </div>
+
+    <div class="work-item">
+      <img src="images/art-4.png" alt="Commercial Space">
+      <div class="work-title">Commercial Space</div>
+      <div class="work-desc">
+        A contemporary commercial interior balancing openness and structure,
+        enhancing identity through material restraint.
       </div>
     </div>
 
